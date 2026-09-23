@@ -307,7 +307,7 @@ a:hover {
     padding: 30px;
     border-radius: 14px;
     background: linear-gradient(
-        135deg
+        135deg,
         rgba(255, 255, 255, 0.10)
         rgba(30, 60, 110, 0.25)
     );
@@ -409,4 +409,322 @@ a:hover {
 }
 .footer-bottom {
     text-align: center;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 18px 25px;
+    }
+
+    ul {
+        gap: 25px;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-content {
+        width: 45%;
+        transform: translate(-20px);
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-button {
+        margin-right: 35px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .collection-grid,
+    .features-grid {
+        gap: 25px;
+    }
+
+    .collection-card {
+        padding: 20px;
+    }
+
+    .footer-content {
+        gap: 30px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    nav {
+        padding: 15px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    nav h1 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        padding: 0;
+        margin: 5px 0 0;
+        flex-wrap: wrap;
+    }
+    nav > a:not(.language-switcher) {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+}
+    a {
+        font-size: 14px;
+    }
+
+    nav ul a {
+        gap: 5px;
+    }
+
+    .language-switcher {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        height: auto;
+        min-height: 500px;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        transform: none;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+        margin: 0 0 15px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+        margin: 0 0 25px;
+        line-height: 1.8;
+    }
+
+    .hero-button {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+
+    /* Products */
+
+    .products {
+        padding: 35px 20px;
+    }
+
+    .products h2,
+    .collections h2,
+    .why-avenix h2 {
+        font-size: 27px;
+        margin-bottom: 35px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 330px;
+        box-sizing: border-box;
+    }
+
+    .product-card img {
+        height: 330px;
+    }
+
+
+    /* Collections */
+
+    .collections {
+        padding: 40px 20px;
+    }
+
+    .collection-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .collection-card {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .collection-card img {
+        height: 240px;
+    }
+
+
+    /* Why AVENIX */
+
+    .why-avenix {
+        padding: 40px 20px;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 30px 20px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-contact {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer h3 {
+        margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+    }
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    nav {
+        padding: 14px 15px;
+    }
+
+    nav h1 {
+        font-size: 23px;
+    }
+
+    ul {
+        gap: 12px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 460px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .products,
+    .collections,
+    .why-avenix {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .products h2,
+    .collections h2,
+    .why-avenix h2 {
+        font-size: 24px;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    .product-card img {
+        height: 300px;
+    }
+
+    .collection-card img {
+        height: 210px;
+    }
+
+    .collection-card h3 {
+        font-size: 19px;
+    }
+
+    .collection-card p {
+        font-size: 14px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 15px;
+    }
+
+    .footer-brand h2 {
+        font-size: 24px;
+    }
 }
